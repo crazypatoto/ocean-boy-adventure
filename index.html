@@ -22,122 +22,162 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper blue lighten-1 center">
-                <a href="#" class="brand-logo center">海上男兒大冒險</a>
+                <a href="#" class="brand-logo center" style="font-size: 1.8rem;">海上男兒大冒險</a>
             </div>
         </nav>
     </div>
 
+
     <div class="container">
 
-        <div class="row">
-            <div class="input-field col s8 m6 l6" style="top: 10px;">
-                <select id="job-title-select">
-                    <option value="" disabled selected style="font-size: 120%;">選取</option>
-                </select>
-                <label style="font-size: 120%;">職業</label>
-            </div>
-            <div class="input-field col s4 m3 l4" style="top: 10px;">
-                <select id="current-month-select">
-                    <option value="" disabled selected>選取</option>
-                    <option value="1">1月</option>
-                    <option value="2">2月</option>
-                    <option value="3">3月</option>
-                    <option value="4">4月</option>
-                    <option value="5">5月</option>
-                    <option value="6">6月</option>
-                    <option value="7">7月</option>
-                    <option value="8">8月</option>
-                    <option value="9">9月</option>
-                    <option value="10">10月</option>
-                    <option value="11">11月</option>
-                    <option value="12">12月</option>
-                </select>
-                <label style="font-size: 120%;">當前月份</label>
-            </div>
-            <div class="col s12 m3 l2">
-                <a class="waves-effect waves-light btn" style="width: 100%;"><i
-                        class="material-icons right">add</i>月份</a>
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col s4 m3 l2" style="margin-top: 30px;">                        
+                        <header class="left-align" style="font-size: 1.5rem;">月份：</header>
+                    </div>
+                    <div class="col s4 m6 l7 center" style="margin-top: 25px;">
+                        <label id="months" style="font-size: 1.75rem;">0</label><label style="font-size: 1rem;"> M</label>
+                    </div>
+                    <div class="col s4 m3 l3" style="margin-top: 10px;">
+                        <a class="waves-effect waves-light btn" style="width: 100%;"><i
+                                class="material-icons right">add</i>月份</a>
+                    </div>                
+                </div>               
             </div>
         </div>
-        <div class="divider" style="margin-top: 30px;"></div>
-        <div class="row" style="margin-top: 1.6rem;">
+        
 
-            <div class="col s4 m3 l3">
-                <header class="left-align" style="font-size: 1.75rem;">總資產：</header>
-            </div>
-            <div class="col s8 m3 l3 center">
-                <label style="font-size: 2rem;">81000</label><label style="font-size: 1.5rem;"> $</label>
-            </div>
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12" style="top: 10px;">
+                        <select id="job-title-select">
+                            <option value="" disabled selected style="font-size: 120%;">選取</option>
+                        </select>
+                        <label style="font-size: 120%;">職業</label>
+                    </div>                    
+                </div>
+                <div class="row" style="margin-top: -1000px;">
 
-            <div class="col s4 m3 l3">
-                <header class="left-align" style="font-size: 1.75rem;">血量：</header>
-            </div>
-            <div class="col s8 m3 l3 center">
-                <label style="font-size: 2rem;">200</label><label style="font-size: 1.5rem;"> pt</label>
+                    <div class="col s4 m3 l3">
+                        <header class="left-align" style="font-size: 1.5rem; margin-top: 3px;">月薪：</header>
+                    </div>
+                    <div class="col s8 m3 l3 center ">
+                        <label id="salary" style="font-size: 1.75rem;">0</label><label style="font-size: 1rem;"> $</label>
+                    </div>
+        
+                    <div class="col s5 m3 l3">
+                        <header class="left-align" style="font-size: 1.5rem; margin-top: 3px;">職業傷害：</header>
+                    </div>
+                    <div class="col s7 m3 l3 center">
+                        <label id="job_injury" style="font-size: 1.75rem;">0</label><label style="font-size: 1rem;"> pt</label>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="divider"></div>
+        
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
 
-        <div class="row">
-            <div class="input-field col s12 m6 l6">
-                <input id="special_expenditure" type="text" class="validate">
-                <label for="special_expenditure">特殊花費</label>
-            </div>
-            <div class="col s6 m3 l3"><a class="waves-effect waves-light btn" style="width: 100%;"><i
-                        class="material-icons left">arrow_drop_down</i>減少</a></div>
-            <div class="col s6 m3 l3"><a class="waves-effect waves-light btn" style="width: 100%;"><i
-                        class="material-icons right">arrow_drop_up</i>增加</a></div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s12 m6 l6">
-                <input id="extra_blood" type="text" class="validate">
-                <label for="extra_blood">特殊血量</label>
-            </div>
-            <div class="col s6 m3 l3">
-                <a class="waves-effect waves-light btn " style="width: 100%;"><i
-                        class="material-icons left">arrow_drop_down</i>減少</a>
-            </div>
-            <div class="col s6 m3 l3">
-                <div class="valign-wrapper"></div>
-                <a class="waves-effect waves-light btn" style="width: 100%;"><i
-                        class="material-icons right">arrow_drop_up</i>增加</a>
+                    <div class="col s5 m3 l3">
+                        <header class="left-align" style="font-size: 2rem; margin-top: 3px;">總資產：</header>
+                    </div>
+                    <div class="col s7 m3 l3 center">
+                        <label id="assets" style="font-size: 2.5rem;">30000</label><label style="font-size: 1.5rem;"> $</label>
+                    </div>
+        
+                    <div class="col s4 m3 l3">
+                        <header class="left-align" style="font-size: 2rem; margin-top: 3px;">血量：</header>
+                    </div>
+                    <div class="col s8 m3 l3 center">
+                        <label id="blood" style="font-size: 2.5rem;">0</label><label style="font-size: 1.5rem;"> pt</label>
+                    </div>
+                </div>
             </div>
         </div>
+                
 
-        <div class="row valign-wrapper">
-            <div class="input-field col s5">
-                <input id="title_count" type="number" class="validate">
-                <label for="title_count">稱號數量</label>
-            </div>
-            <div class="col s7">
-                <h4 class="left-align">稱號加薪：<label class="right-align" style="font-size: 85%;">81000</label><label
-                        style="font-size: 85%;"> $</label></h4>
-            </div>
-        </div>
-
-        <div class="row valign-wrapper">
-            <div class="input-field col s5">
-                <select>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-                <label>斜槓青年</label>
-            </div>
-            <div class="col s7">
-                <h4 class="left-align">副業加薪：<label style="font-size: 85%;">81000</label><label style="font-size: 85%;">
-                        $</label></h4>
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="card-content-custom" style="margin-bottom: 0px;">
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <input id="special_expenditure" type="number" class="validate">
+                            <label for="special_expenditure">特殊花費</label>
+                        </div>
+                        <div class="col s6 m3 l3"><a class="waves-effect waves-light btn" style="width: 100%;"><i
+                                    class="material-icons left">arrow_drop_down</i>減少</a></div>
+                        <div class="col s6 m3 l3"><a class="waves-effect waves-light btn" style="width: 100%;"><i
+                                    class="material-icons right">arrow_drop_up</i>增加</a></div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        <!-- <div class="divider"></div> -->
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                        <input id="extra_blood" type="number" class="validate">
+                        <label for="extra_blood">特殊血量</label>
+                    </div>
+                    <div class="col s6 m3 l3">
+                        <a class="waves-effect waves-light btn " style="width: 100%;"><i
+                                class="material-icons left">arrow_drop_down</i>減少</a>
+                    </div>
+                    <div class="col s6 m3 l3">
+                        <div class="valign-wrapper"></div>
+                        <a class="waves-effect waves-light btn" style="width: 100%;"><i
+                                class="material-icons right">arrow_drop_up</i>增加</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    </div>
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                        <input id="title_count" type="number" class="validate">
+                        <label for="title_count">稱號數量</label>
+                    </div>
+                    <div class="col s5 m3 l3" style="margin-top: 22px;">
+                        <header class="left-align" style="font-size: 1.6rem;">稱號加薪：</header>
+                    </div>
+                    <div class="col s7 m3 l3 center" style="margin-top: 22px;">
+                        <label style="font-size: 1.75rem;">0</label><label style="font-size: 1.5rem;"> $</label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="card blue lighten-5">
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                        <select>
+                            <option value="" disabled selected>選取</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>斜槓青年</label>
+                    </div>
+                    <div class="col s5 m3 l3" style="margin-top: 22px;">
+                        <header class="left-align" style="font-size: 1.6rem;">副業加薪：</header>
+                    </div>
+                    <div class="col s7 m3 l3 center" style="margin-top: 22px;">
+                        <label style="font-size: 1.75rem;">0</label><label style="font-size: 1.5rem;"> $</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        
+    </div>    
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>

@@ -1,12 +1,10 @@
 //M.AutoInit();
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('select');
-//     var instances = M.FormSelect.init(elems);
-//   });
+var jobjson;
+var currentjob;
 
 $(document).ready(function () {
   $('select').formSelect();  //init selects
+
 
   $.getJSON("jsondata/jobs.json", function (jobs) {
 
@@ -17,7 +15,25 @@ $(document).ready(function () {
 		});    
 
     jobSelect.formSelect();  //init selects
+
+    jobjson = jobs;
   });
 
 
 });
+
+$("#job-title-select").change( function () {
+
+  var jobselect = $(this);
+  var instance = M.FormSelect.getInstance(jobselect);
+
+  $("#salary").text(jobjson[jobselect.val()-1]["salary"]);
+  $("#blood").text(jobjson[jobselect.val()-1]["initial_health"]);
+  $("#job_injury").text(jobjson[jobselect.val()-1]["injury"]);
+  
+
+});
+
+
+
+
