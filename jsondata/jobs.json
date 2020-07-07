@@ -1,106 +1,104 @@
-{
-    "jobs": [
-        {
-            "id": 1,
-            "job_title": "大學生",
-            "salary": 10000,
-            "initial_health": 150
-        },
-        {
-            "id": 2,
-            "job_title": "公車司機",
-            "salary": 45000,
-            "initial_health": 120
-        },
-        {
-            "id": 3,
-            "job_title": "手搖店店員",
-            "salary": 32000,
-            "initial_health": 80
-        },
-        {
-            "id": 4,
-            "job_title": "手搖店店長",
-            "salary": 50000,
-            "initial_health": 80
-        },
-        {
-            "id": 5,
-            "job_title": "foodpanda外送員",
-            "salary": 45000,
-            "initial_health": 100
-        },
-        {
-            "id": 6,
-            "job_title": "市長",
-            "salary": 200000,
-            "initial_health": 100
-        },
-        {
-            "id": 7,
-            "job_title": "律師",
-            "salary": 80000,
-            "initial_health": 80
-        },
-        {
-            "id": 8,
-            "job_title": "海上男兒",
-            "salary": 0,
-            "initial_health": 20
-        },
-        {
-            "id": 9,
-            "job_title": "啃老",
-            "salary": 0,
-            "initial_health": 30
-        },
-        {
-            "id": 10,
-            "job_title": "教師",
-            "salary": 50000,
-            "initial_health": 100
-        },
-        {
-            "id": 11,
-            "job_title": "公車司機",
-            "salary": 45000,
-            "initial_health": 120
-        },
-        {
-            "id": 12,
-            "job_title": "黑傑克",
-            "salary": 0,
-            "initial_health": 10
-        },
-        {
-            "id": 13,
-            "job_title": "黑道大哥",
-            "salary": 35000,
-            "initial_health": 80
-        },
-        {
-            "id": 14,
-            "job_title": "黑道小弟",
-            "salary": 25000,
-            "initial_health": 80
-        },
-        {
-            "id": 15,
-            "job_title": "實況主",
-            "salary": 60000,
-            "initial_health": 150
-        },
-        {
-            "id": 16,
-            "job_title": "醫生",
-            "salary": 150000,
-            "initial_health": 100
-        },
-        {
-            "id": 17,
-            "job_title": "警察",
-            "salary": 50000,
-            "initial_health": 120
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "job_title": "大學生",
+        "salary": 10000,
+        "initial_health": 150
+    },
+    {
+        "id": 2,
+        "job_title": "公車司機",
+        "salary": 45000,
+        "initial_health": 120
+    },
+    {
+        "id": 3,
+        "job_title": "手搖店店員",
+        "salary": 32000,
+        "initial_health": 80
+    },
+    {
+        "id": 4,
+        "job_title": "手搖店店長",
+        "salary": 50000,
+        "initial_health": 80
+    },
+    {
+        "id": 5,
+        "job_title": "foodpanda外送員",
+        "salary": 45000,
+        "initial_health": 100
+    },
+    {
+        "id": 6,
+        "job_title": "市長",
+        "salary": 200000,
+        "initial_health": 100
+    },
+    {
+        "id": 7,
+        "job_title": "律師",
+        "salary": 80000,
+        "initial_health": 80
+    },
+    {
+        "id": 8,
+        "job_title": "海上男兒",
+        "salary": 0,
+        "initial_health": 20
+    },
+    {
+        "id": 9,
+        "job_title": "啃老",
+        "salary": 0,
+        "initial_health": 30
+    },
+    {
+        "id": 10,
+        "job_title": "教師",
+        "salary": 50000,
+        "initial_health": 100
+    },
+    {
+        "id": 11,
+        "job_title": "公車司機",
+        "salary": 45000,
+        "initial_health": 120
+    },
+    {
+        "id": 12,
+        "job_title": "黑傑克",
+        "salary": 0,
+        "initial_health": 10
+    },
+    {
+        "id": 13,
+        "job_title": "黑道大哥",
+        "salary": 35000,
+        "initial_health": 80
+    },
+    {
+        "id": 14,
+        "job_title": "黑道小弟",
+        "salary": 25000,
+        "initial_health": 80
+    },
+    {
+        "id": 15,
+        "job_title": "實況主",
+        "salary": 60000,
+        "initial_health": 150
+    },
+    {
+        "id": 16,
+        "job_title": "醫生",
+        "salary": 150000,
+        "initial_health": 100
+    },
+    {
+        "id": 17,
+        "job_title": "警察",
+        "salary": 50000,
+        "initial_health": 120
+    }
+]
