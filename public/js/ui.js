@@ -63,7 +63,7 @@ $second_job_select.change(function () {
 
   current_job_sec = jobjson[$second_job_select.val() - 1];
   sec_job_salary = current_job_sec['salary'] / 2;
-  UpdateUI(); 
+  UpdateUI();
 
 });
 
@@ -83,20 +83,29 @@ $('#add_month_btn').click(function () {
 
 $('.btn.add').click(function () {
   if (this.classList.contains("money")) {
-    total_assets += parseInt($("#special_expenditure").val(), 10);
+    if ($('#special_expenditure').val() != "") {
+      total_assets += parseInt($("#special_expenditure").val(), 10);
+    }
   }
   else if (this.classList.contains("health")) {
-    current_health += parseInt($("#extra_health").val(), 10);
+    if ($('#extra_health').val() != "") {
+      current_health += parseInt($("#extra_health").val(), 10);
+    }
   }
   UpdateUI();
 });
 
 $('.btn.minus').click(function () {
   if (this.classList.contains("money")) {
-    total_assets -= parseInt($("#special_expenditure").val(), 10);
+    console.log($('#special_expenditure').val());
+    if ($('#special_expenditure').val() != "") {
+      total_assets -= parseInt($("#special_expenditure").val(), 10);
+    }
   }
   else if (this.classList.contains("health")) {
-    current_health -= parseInt($("#extra_health").val(), 10);
+    if ($('#extra_health').val() != "") {
+      current_health -= parseInt($("#extra_health").val(), 10);
+    }
   }
   UpdateUI();
 });
